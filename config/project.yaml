@@ -1,0 +1,64 @@
+dateModified: 1552593998
+email:
+  fromEmail: mathias@mathiasrenner.ch
+  fromName: 'Mathias Renner'
+  transportType: craft\mail\transportadapters\Sendmail
+fieldGroups:
+  11fcf648-c46a-4cb9-bf9c-de04e8ce644a:
+    name: Common
+sections:
+  bce5974d-8954-41f8-b59b-205ef241305b:
+    name: Home
+    handle: home
+    type: single
+    enableVersioning: true
+    propagateEntries: true
+    siteSettings:
+      48c3aa5b-eec3-4454-a328-a3e1a4f647c2:
+        enabledByDefault: true
+        hasUrls: true
+        uriFormat: /
+        template: index
+    entryTypes:
+      a1bce3f6-26c4-41e3-a964-61f59c4628f1:
+        name: Home
+        handle: home
+        hasTitleField: false
+        titleLabel: 'Mathias renner'
+        titleFormat: '{section.name|raw}'
+        sortOrder: 1
+siteGroups:
+  dbd97a29-b0b8-4f99-b883-5bbceef9034b:
+    name: 'Mathias Renner'
+sites:
+  48c3aa5b-eec3-4454-a328-a3e1a4f647c2:
+    baseUrl: $DEFAULT_SITE_URL
+    handle: default
+    hasUrls: true
+    language: en-US
+    name: 'Mathias Renner'
+    primary: true
+    siteGroup: dbd97a29-b0b8-4f99-b883-5bbceef9034b
+    sortOrder: 1
+system:
+  edition: solo
+  name: 'Mathias Renner'
+  live: true
+  schemaVersion: 3.1.25
+  timeZone: Europe/Zurich
+users:
+  requireEmailVerification: true
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoVolumeUid: null
+  photoSubpath: ''
+volumes:
+  50706d0d-adfc-4561-99a1-bad68c596824:
+    name: Uploads
+    handle: uploads
+    type: craft\volumes\Local
+    hasUrls: true
+    url: '@web/uploads'
+    settings:
+      path: '@webroot/assets/uploads'
+    sortOrder: 2

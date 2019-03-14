@@ -2,7 +2,7 @@
 /.idea
 /vendor
 .DS_Store
-.swp
+*.swp
 # Gulp related files
 gulpfile.js
 node_modules/
