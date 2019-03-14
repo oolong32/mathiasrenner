@@ -1,4 +1,4 @@
-dateModified: 1552593998
+dateModified: 1552596207
 email:
   fromEmail: mathias@mathiasrenner.ch
   fromName: 'Mathias Renner'
@@ -32,14 +32,14 @@ siteGroups:
     name: 'Mathias Renner'
 sites:
   48c3aa5b-eec3-4454-a328-a3e1a4f647c2:
-    baseUrl: $DEFAULT_SITE_URL
-    handle: default
-    hasUrls: true
-    language: en-US
-    name: 'Mathias Renner'
-    primary: true
     siteGroup: dbd97a29-b0b8-4f99-b883-5bbceef9034b
+    name: 'Mathias Renner'
+    handle: default
+    language: en-US
+    hasUrls: true
+    baseUrl: '@web'
     sortOrder: 1
+    primary: true
 system:
   edition: solo
   name: 'Mathias Renner'
@@ -58,7 +58,7 @@ volumes:
     handle: uploads
     type: craft\volumes\Local
     hasUrls: true
-    url: '@web/uploads'
+    url: '@web/assets/uploads/'
     settings:
       path: '@webroot/assets/uploads'
-    sortOrder: 2
+    sortOrder: '2'

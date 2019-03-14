@@ -3,12 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/styles.css">
   <link rel="shortcut icon" href="/assets/_pic/favicon.png">
-  <title>Mathias Renner</title>
+  <title>{{ currentSite.name }}</title>
+  <meta description="Mathias Renner is a swiss artist specialized in installation art and photgraphy.">
 </head>
 <body>
+
+  <header>
+    <p><a href="tel:+447479401298">uk +44 74 794 01 298</a></p>
+    <p><a href="tel:+41774438391">ch +41 77 443 83 91</a></p>
+    <p><a href="mailto:info@mathiasrenner.ch">info@mathiasrenner</a></p>
+  </header>
  
+  <main>
+    <article>
+      <section></section>
+    </article>
+  </main>
+)
+{% set index_page = craft.entries.section('home').one() %}
 		<div id="maximage">
 		    <div class="first-item">
 		        <img src="/images/Mathias Renner_Black Leather.jpg" alt="" />

@@ -2,10 +2,18 @@
 /.idea
 /vendor
 .DS_Store
+
+# vim temporary files
+*~
 *.swp
+*.swo
+sass/.styles.scss.swp
+
 # Gulp related files
 gulpfile.js
 node_modules/
 package-lock.json
 package.json
+
+# uploads folder
 /uploads

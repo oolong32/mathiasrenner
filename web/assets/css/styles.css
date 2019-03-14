@@ -2,7 +2,7 @@
 html, body {
   width: 100%;
   height: 100%;
-  padding: 0px;
+  padding: 20px;
   margin: 0px;
   font-family: helvetica;
   font-size: 100%;
@@ -11,6 +11,18 @@ html, body {
   /* Zeilenabstand */
   color: #000;
   /* schwarz, weiss = #fff, farbe nicht hier ändern, sondern mit class="whiteText/blacktext" in den html Dateien! */ }
+
+header {
+  margin: 0;
+  padding: 0; }
+  header p {
+    margin: 0;
+    font-size: 0.625rem;
+    line-height: 1.5; }
+  header a {
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none; }
 
 #content {
   position: fixed;
