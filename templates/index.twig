@@ -10,43 +10,21 @@
 </head>
 <body>
 
+{% set index_page = craft.entries.section('home').one() %}
+
   <header>
     <p><a href="tel:+447479401298">uk +44 74 794 01 298</a></p>
     <p><a href="tel:+41774438391">ch +41 77 443 83 91</a></p>
-    <p><a href="mailto:info@mathiasrenner.ch">info@mathiasrenner</a></p>
+    <p><a href="mailto:info@mathiasrenner.ch">info@mathiasrenner.ch</a></p>
   </header>
  
   <main>
+    {% for %}
     <article>
       <section></section>
     </article>
+    {% endfor %}
   </main>
-)
-{% set index_page = craft.entries.section('home').one() %}
-		<div id="maximage">
-		    <div class="first-item">
-		        <img src="/images/Mathias Renner_Black Leather.jpg" alt="" />
-		    </div>
-		    
-		    <img src="/images/Mathias Renner_Matisse.jpg" alt="" />
-		    
-		    
-		    
 
-		</div>
-		<p id="next"></p>
-		
-		<div id="content" class="sub">
-			<ul class="main">
-				<li class="sub">    </li>
-				<li>UK +44 74 794 01 298</li>
-			
-			<ul class="sub">
-				<li>CH +41 77 443 83 91</li>
-				<li>INFO@MATHIASRENNER.CH</li>
-
-			</ul>
-			
-		</div> 
 </body>
 </html>
