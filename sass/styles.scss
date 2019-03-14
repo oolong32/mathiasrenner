@@ -17,14 +17,15 @@ body {
   overflow: hidden;
 }
 
+li, td, p {
+  margin: 0;
+  font-size: 0.625rem;
+  line-height: 1.5;
+}
+
 header {
   align-self: top;
   padding: 0;
-  p {
-    margin: 0;
-    font-size: 0.625rem;
-    line-height: 1.5;
-  }
   a {
     text-transform: uppercase;
     color: black;
