@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/flickity.css">
   <link rel="stylesheet" href="/assets/css/styles.css">
   <link rel="shortcut icon" href="/assets/_pic/favicon.png">
   <title>{{ currentSite.name }}</title>
@@ -10,7 +11,7 @@
 </head>
 <body>
 
-{% set index_page = craft.entries.section('home').one() %}
+{% set entry = craft.entries.section('home').one() %}
 
   <header>
     <p><a href="tel:+447479401298">uk +44 74 794 01 298</a></p>
@@ -19,12 +20,20 @@
   </header>
  
   <main>
-    {% for %}
-    <article>
-      <section></section>
+    {% if entry.images|length %}
+    <article class="carousel">
+      {% for image in entry.images %}
+      <section class="carousel-cell">
+        <img src="{{ image.getUrl() }}" alt="">
+      </section>
+      {% endfor %}
     </article>
-    {% endfor %}
+    {% else %}
+    <p>There are no images at this time.</p>
+    {% endif %}
   </main>
 
+  <script src="/assets/js/flickity.js"></script>
+  <script src="/assets/js/initializeSlider.js"></script>
 </body>
 </html>
