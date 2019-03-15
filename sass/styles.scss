@@ -46,6 +46,13 @@ header {
     width: auto;
     height: 90%;
     object-fit: contain;
+    // disable select
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -webkit-touch-callout: none;
+    -o-user-select: none;
+    -moz-user-select: none;
   }
 }
 
