@@ -36,6 +36,7 @@ header {
 }
 
 .carousel-cell {
+  cursor: pointer;
   width: 100%; /* full width */
   height: 100vh; /* height of carousel */
   margin-right: 10px;
@@ -46,7 +47,6 @@ header {
     height: 90%;
     object-fit: contain;
   }
-  
 }
 
 @media (max-width: 600px) {
