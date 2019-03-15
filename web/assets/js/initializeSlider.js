@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   var images = document.querySelectorAll('.carousel-cell');
   for (let i = 0; i < images.length; i++) {
-    images[i].addEventListener('click' || 'touchend', function() {
+    images[i].addEventListener('click' || 'touch', function() {
       flkty.next( true, true );
     });
   }
