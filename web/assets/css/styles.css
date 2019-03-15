@@ -14,7 +14,9 @@ body {
   display: grid;
   grid-template-columns: 150px 1fr;
   grid-gap: 20px;
-  overflow: hidden; }
+  overflow: hidden;
+  padding: 22px;
+  margin: 0; }
 
 li, td, p {
   margin: 0;
