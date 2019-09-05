@@ -1,4 +1,4 @@
-dateModified: 1567709958
+dateModified: 1567713317
 email:
   fromEmail: mathias@mathiasrenner.ch
   fromName: 'Mathias Renner'
@@ -86,6 +86,22 @@ globalSets:
   c8bf5d7f-1f31-4bb7-9d04-78c316ce9c10:
     name: 'Allgemeine Infos'
     handle: infos
+    fieldLayouts:
+      994314ce-1e73-4e7d-99cc-3165b6d64f1f:
+        tabs:
+          -
+            name: 'Allgemeine Infos'
+            sortOrder: 1
+            fields:
+              3dc7f4b8-8afa-486d-a5ff-363b1b8816ed:
+                required: false
+                sortOrder: 1
+              d4150027-0159-4468-aead-b1b4c07d760e:
+                required: false
+                sortOrder: 2
+              21293d2c-4fb2-495e-aa59-0fa17b99be9b:
+                required: false
+                sortOrder: 3
 sections:
   bce5974d-8954-41f8-b59b-205ef241305b:
     name: Home
@@ -107,8 +123,31 @@ sections:
         titleLabel: 'Mathias renner'
         titleFormat: '{section.name|raw}'
         sortOrder: 1
+  89b09de4-f600-43e5-a40c-2c1273849092:
+    name: Projekte
+    handle: projects
+    type: structure
+    enableVersioning: true
+    propagateEntries: true
+    siteSettings:
+      48c3aa5b-eec3-4454-a328-a3e1a4f647c2:
+        enabledByDefault: true
+        hasUrls: true
+        uriFormat: 'projects/{slug}'
+        template: ''
+    structure:
+      uid: 3e672880-8754-4593-b2a7-35aa673eb366
+      maxLevels: '1'
+    entryTypes:
+      c5144144-9639-47fb-b07e-eb1096795e90:
+        name: Projekt
+        handle: project
+        hasTitleField: true
+        titleLabel: Title
+        titleFormat: ''
+        sortOrder: 1
         fieldLayouts:
-          94b37936-e986-45d7-bccd-ae3241d11238:
+          8fb6421c-2521-46d2-ad79-ae22733ca6e4:
             tabs:
               -
                 name: Common
