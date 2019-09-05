@@ -10,23 +10,28 @@
 </head>
 <body>
 
-{% set entry = craft.entries.section('home').one() %}
 
   <header>
-    <p><a href="tel:+447479401298">uk +44 74 794 01 298</a></p>
-    <p><a href="tel:+41774438391">ch +41 77 443 83 91</a></p>
-    <p><a href="mailto:info@mathiasrenner.ch">info@mathiasrenner.ch</a></p>
+    <p>{{ infos.claim }}</p>
+    <p><a href="tel:{{ infos.phone|replace({' ': ''}) }}">{{ infos.phone }}</a></p>
+    <p><a href="mailto:{{ infos.mail }}">{{ infos.mail }}</a></p>
   </header>
  
   <main>
-    {% if entry.images|length %}
-      {% for image in entry.images %}
-      <section class="image-container">
-        <img src="{{ image.getUrl() }}" alt="">
-      </section>
+    {% set projects = craft.entries.section('projects').all() %}
+    {% if projects|length %}
+      {% for project in projects %}
+        <article class="project">
+          <h2>{{ project.title }}</h2>
+          {% if project.images|length %}
+            {% for image in project.images %}
+            <img src="{{ image.getUrl() }}" alt="Mathias Renner, {{ project.title }}">
+            {% endfor %}
+          {%   else %}
+            <p>There seem to be no images for this project!?</p>
+          {% endif %}
+        </article>
       {% endfor %}
-    {% else %}
-    <p>There are no images at this time.</p>
     {% endif %}
   </main>
 
