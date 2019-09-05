@@ -22,11 +22,14 @@
     {% if projects|length %}
       {% for project in projects %}
         <article class="project">
-          <h2>{{ project.title }}</h2>
-          {% if project.images|length %}
+          <h2 class="project-title">{{ project.title }}</h2>
+          {% if project.images|length > 1 %}
             {% for image in project.images %}
-            <img src="{{ image.getUrl() }}" alt="Mathias Renner, {{ project.title }}">
+            <img class="project-image double" src="{{ image.getUrl() }}" alt="Mathias Renner, {{ project.title }}">
             {% endfor %}
+          {% elseif project.images|length == 1 %}
+          {% set image = project.images.one() %}
+            <img class="project-image single" src="{{ image.getUrl() }}" alt="Mathias Renner, {{ project.title }}">
           {%   else %}
             <p>There seem to be no images for this project!?</p>
           {% endif %}
