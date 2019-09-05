@@ -52,6 +52,7 @@ article.project {
       margin: 0 auto; }
     article.project img.project-image.double {
       max-width: 40%;
+      height: auto;
       margin: 0 auto 0 0; }
     article.project img.double + img.double {
       margin: 0 1rem 0 auto; } }
