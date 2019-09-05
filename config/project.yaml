@@ -1,4 +1,4 @@
-dateModified: 1552598500
+dateModified: 1567709958
 email:
   fromEmail: mathias@mathiasrenner.ch
   fromName: 'Mathias Renner'
@@ -6,6 +6,8 @@ email:
 fieldGroups:
   11fcf648-c46a-4cb9-bf9c-de04e8ce644a:
     name: Common
+  623e8f21-c10a-45f4-a9bc-6329faaa52bd:
+    name: 'Allgemeine Infos'
 fields:
   6720cb60-b2a2-4056-aad9-2f33e3e8f6a5:
     name: Images
@@ -34,6 +36,56 @@ fields:
       localizeRelations: false
     contentColumnType: string
     fieldGroup: 11fcf648-c46a-4cb9-bf9c-de04e8ce644a
+  21293d2c-4fb2-495e-aa59-0fa17b99be9b:
+    name: 'E-Mail Adresse'
+    handle: mail
+    instructions: ''
+    searchable: false
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\Email
+    settings:
+      placeholder: ''
+    contentColumnType: string
+    fieldGroup: 623e8f21-c10a-45f4-a9bc-6329faaa52bd
+  d4150027-0159-4468-aead-b1b4c07d760e:
+    name: Telefon-Nummer
+    handle: phone
+    instructions: ''
+    searchable: false
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\PlainText
+    settings:
+      placeholder: ''
+      code: ''
+      multiline: ''
+      initialRows: '4'
+      charLimit: ''
+      columnType: text
+    contentColumnType: text
+    fieldGroup: 623e8f21-c10a-45f4-a9bc-6329faaa52bd
+  3dc7f4b8-8afa-486d-a5ff-363b1b8816ed:
+    name: Claim
+    handle: claim
+    instructions: ''
+    searchable: false
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\PlainText
+    settings:
+      placeholder: ''
+      code: ''
+      multiline: ''
+      initialRows: '4'
+      charLimit: ''
+      columnType: text
+    contentColumnType: text
+    fieldGroup: 623e8f21-c10a-45f4-a9bc-6329faaa52bd
+globalSets:
+  c8bf5d7f-1f31-4bb7-9d04-78c316ce9c10:
+    name: 'Allgemeine Infos'
+    handle: infos
 sections:
   bce5974d-8954-41f8-b59b-205ef241305b:
     name: Home
