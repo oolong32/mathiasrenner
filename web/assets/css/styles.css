@@ -34,7 +34,8 @@ article.project {
   article.project h2.project-title {
     width: 100%; }
   article.project img.project-image {
-    max-width: 100%; }
+    max-width: 100%;
+    height: auto; }
 
 @media (min-width: 600px) {
   article.project {
@@ -48,11 +49,9 @@ article.project {
       order: 2; }
     article.project img.project-image.single {
       max-width: 100%;
-      height: auto;
       margin: 0 auto; }
     article.project img.project-image.double {
       max-width: 40%;
-      height: auto;
       margin: 0 auto 0 0; }
     article.project img.double + img.double {
       margin: 0 1rem 0 auto; } }

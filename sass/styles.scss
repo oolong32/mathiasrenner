@@ -41,6 +41,7 @@ article.project {
   }
   img.project-image { 
     max-width: 100%;
+    height: auto;
   }
 }
 
@@ -57,12 +58,10 @@ article.project {
     }
     img.project-image.single {
       max-width: 100%;
-      height: auto;
       margin: 0 auto;
     }
     img.project-image.double { 
       max-width: 40%;
-      height: auto;
       margin: 0 auto 0 0;
     }
     img.double + img.double {
