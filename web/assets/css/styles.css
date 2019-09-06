@@ -50,10 +50,10 @@ article.project {
       margin-top: 2rem;
       order: 3; }
     article.project img.project-image.single {
-      max-width: 100%;
+      max-width: 65%;
       margin: 0 auto; }
     article.project img.project-image.double {
-      max-width: 40%;
+      max-width: 35%;
       order: 1;
       margin: 0 1rem auto auto; }
     article.project img.double + img.double {
