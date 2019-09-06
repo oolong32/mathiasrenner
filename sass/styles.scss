@@ -44,6 +44,7 @@ article.project {
     max-width: 100%;
     height: auto;
   }
+  img.project-image.single { max-width: 60%; }
 }
 
 @media (min-width: 600px) {
@@ -58,13 +59,13 @@ article.project {
       order: 3; // unten
     }
     img.project-image.single {
-      max-width: 65%;
+      max-width: 50%;
       margin: 0 auto;
     }
     img.project-image.double { 
       max-width: 35%;
       order: 1; // links
-      margin: 0 1rem auto auto;
+      margin: 0 3rem auto auto;
     }
     img.double + img.double {
       order: 2; // rechts

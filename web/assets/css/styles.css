@@ -38,6 +38,8 @@ article.project {
     margin: 0 auto 1rem 0;
     max-width: 100%;
     height: auto; }
+  article.project img.project-image.single {
+    max-width: 60%; }
 
 @media (min-width: 600px) {
   article.project {
@@ -50,12 +52,12 @@ article.project {
       margin-top: 2rem;
       order: 3; }
     article.project img.project-image.single {
-      max-width: 65%;
+      max-width: 50%;
       margin: 0 auto; }
     article.project img.project-image.double {
       max-width: 35%;
       order: 1;
-      margin: 0 1rem auto auto; }
+      margin: 0 3rem auto auto; }
     article.project img.double + img.double {
       order: 2;
       margin: 0 auto auto 0; } }
