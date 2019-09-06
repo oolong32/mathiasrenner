@@ -37,8 +37,6 @@ article.project {
     margin: 0 auto 1rem 0;
     max-width: 100%;
     height: auto; }
-  article.project img.project-image:nth-child(n+3) {
-    display: none; }
 
 footer {
   padding: 0 0 2rem;
