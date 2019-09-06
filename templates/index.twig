@@ -11,7 +11,7 @@
 <body>
 
 
-  <header>
+  <header id="start">
     <p>{{ infos.claim }}</p>
     <p><a href="tel:{{ infos.phone|replace({' ': ''}) }}">{{ infos.phone }}</a></p>
     <p><a href="mailto:{{ infos.mail }}">{{ infos.mail }}</a></p>
@@ -37,6 +37,10 @@
       {% endfor %}
     {% endif %}
   </main>
+
+  <footer>
+    <p><a href="#start">back to top</a></p>
+  </footer>
 
   <script src="/assets/js/vue/vue.min.js"></script>
   <script src="/assets/js/vue/vue_script.js"></script>

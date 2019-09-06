@@ -12,19 +12,19 @@
   font-size: 0.625rem;
   font-weight: normal;
   line-height: 1.5;
-  text-transform: uppercase;
+  // text-transform: uppercase;
 }
 
 body {
-  padding: 1rem 1rem 3rem;
+  padding: 0 1rem 3rem;
 }
 
 header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 2rem;
   margin-bottom: 4rem;
   a {
-    text-transform: uppercase;
     color: black;
     text-decoration: none;
   }
@@ -44,7 +44,18 @@ article.project {
     max-width: 100%;
     height: auto;
   }
+  img.project-image:nth-child(n+3) { display: none }
   // img.project-image.single { max-width: 60%; }
+}
+
+footer {
+  padding: 0 0 2rem;
+  text-align: center;
+  a {
+    text-decoration: none;
+    color: black;
+    // text-transform: none;
+  }
 }
 
 @media (min-width: 600px) {
