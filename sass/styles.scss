@@ -9,15 +9,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 0.625rem;
+  font-weight: normal;
+  line-height: 1.5;
+  text-transform: uppercase;
 }
 
 body {
   padding: 1rem 1rem 3rem;
-}
-
-li, td, p {
-  font-size: 0.625rem;
-  line-height: 1.5;
 }
 
 header {
@@ -36,10 +35,12 @@ article.project {
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-bottom: 2rem;
   h2.project-title {
     width: 100%;
   }
   img.project-image { 
+    margin: 0 auto 1rem 0; // oben links angeschlagen
     max-width: 100%;
     height: auto;
   }
@@ -47,14 +48,14 @@ article.project {
 
 @media (min-width: 600px) {
   article.project {
-    flex-direction: row-reverse;
+    flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 4rem;
     h2.project-title {
       width: 100%;
       text-align: center;
       margin-top: 2rem;
-      order: 2;
+      order: 3; // unten
     }
     img.project-image.single {
       max-width: 100%;
@@ -62,10 +63,12 @@ article.project {
     }
     img.project-image.double { 
       max-width: 40%;
-      margin: 0 auto 0 0;
+      order: 1; // links
+      margin: 0 1rem auto auto;
     }
     img.double + img.double {
-      margin: 0 1rem 0 auto;
+      order: 2; // rechts
+      margin: 0 auto auto 0;
     }
   }
 }
