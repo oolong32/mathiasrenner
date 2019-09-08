@@ -15,7 +15,7 @@
   // text-transform: uppercase;
 }
 
-body { padding: 8rem 1rem 3rem; }
+body { padding: 6rem 1rem 3rem; }
 
 header {
   position: fixed;
@@ -69,6 +69,8 @@ footer {
 }
 
 @media (min-width: 600px) {
+  body { padding-top: 9rem; }
+
   header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -78,18 +80,18 @@ footer {
   article.project {
     flex-direction: row;
     flex-wrap: wrap;
-    margin-bottom: 9rem;
+    margin-bottom: 10rem;
     h2.project-title {
       width: 100%;
       margin-top: 2rem;
       order: 3; // unten
     }
     img.project-image.single {
-      max-width: 40%;
+      max-width: 45%;
       margin: 0 auto;
     }
     img.project-image.double { 
-      max-width: 25%;
+      max-width: 30%;
       order: 1; // links
       margin: 0 1rem auto auto;
     }
