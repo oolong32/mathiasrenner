@@ -38,9 +38,10 @@ header {
 
 article.project {
   display: flex;
+  display: -webkit-flexbox;
   flex-direction: column;
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
   h2.project-title {
     width: 100%;
     text-align: center;
@@ -71,20 +72,20 @@ footer {
   article.project {
     flex-direction: row;
     flex-wrap: wrap;
-    margin-bottom: 4rem;
+    margin-bottom: 9rem;
     h2.project-title {
       width: 100%;
       margin-top: 2rem;
       order: 3; // unten
     }
     img.project-image.single {
-      max-width: 40%;
+      max-width: 45%;
       margin: 0 auto;
     }
     img.project-image.double { 
       max-width: 30%;
       order: 1; // links
-      margin: 0 3rem auto auto;
+      margin: 0 2rem auto auto;
     }
     img.double + img.double {
       order: 2; // rechts
