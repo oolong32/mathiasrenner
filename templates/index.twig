@@ -8,13 +8,13 @@
   <title>{{ currentSite.name }}</title>
   <meta description="Mathias Renner is a swiss artist specialized in installation art and photgraphy.">
 </head>
-<body>
+<body id="projects">
 
 
-  <header id="start">
+  <header>
     <h1>{{ infos.claim }}</h1>
     <p><a href="tel:{{ infos.phone|replace({' ': ''}) }}">{{ infos.phone }}</a></p>
-    <p><a href="mailto:{{ infos.mail }}">Contact</a></p>
+    <p><a href="mailto:{{ infos.mail }}">contact</a></p>
   </header>
  
   <main>
@@ -45,7 +45,7 @@
   </main>
 
   <footer>
-    <p><a href="#start">back to top</a></p>
+    <p><a href="#projects">back to top</a></p>
   </footer>
 
   <script src="/assets/js/vue/vue.min.js"></script>
