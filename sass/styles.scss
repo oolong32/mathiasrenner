@@ -38,11 +38,16 @@ article.project {
   margin-bottom: 2rem;
   h2.project-title {
     width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
   }
   img.project-image { 
     margin: 0 auto 1rem 0; // oben links angeschlagen
     max-width: 100%;
     height: auto;
+  }
+  img.project-image + img.project-image { 
+    margin-bottom: 0;
   }
   // img.project-image.single { max-width: 60%; }
 }
@@ -64,7 +69,6 @@ footer {
     margin-bottom: 4rem;
     h2.project-title {
       width: 100%;
-      text-align: center;
       margin-top: 2rem;
       order: 3; // unten
     }

@@ -32,11 +32,15 @@ article.project {
   width: 100%;
   margin-bottom: 2rem; }
   article.project h2.project-title {
-    width: 100%; }
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem; }
   article.project img.project-image {
     margin: 0 auto 1rem 0;
     max-width: 100%;
     height: auto; }
+  article.project img.project-image + img.project-image {
+    margin-bottom: 0; }
 
 footer {
   padding: 0 0 2rem;
@@ -52,7 +56,6 @@ footer {
     margin-bottom: 4rem; }
     article.project h2.project-title {
       width: 100%;
-      text-align: center;
       margin-top: 2rem;
       order: 3; }
     article.project img.project-image.single {
