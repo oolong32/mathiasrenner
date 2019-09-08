@@ -14,7 +14,7 @@
   <header id="start">
     <h1>{{ infos.claim }}</h1>
     <p><a href="tel:{{ infos.phone|replace({' ': ''}) }}">{{ infos.phone }}</a></p>
-    <p><a href="mailto:{{ infos.mail }}">{{ infos.mail }}</a></p>
+    <p><a href="mailto:{{ infos.mail }}">Contact</a></p>
   </header>
  
   <main>
@@ -22,7 +22,9 @@
     {% if projects|length %}
       {% for project in projects %}
         <article class="project">
+        {#
           <h2 class="project-title">{{ project.title }}</h2>
+        #}
           {% if project.images|length > 1 %}
           {% set counter = 0 %}
             {% for image in project.images %}
