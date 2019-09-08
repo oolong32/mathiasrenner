@@ -36,11 +36,12 @@ header {
 }
 
 article.project {
-  display: -webkit-flex;
+  // display: -webkit-flex;
   display: flex;
   flex-direction: column;
   width: 100%;
   margin-bottom: 5rem;
+  align-items: flex-start;
   h2.project-title {
     width: 100%;
     text-align: center;
