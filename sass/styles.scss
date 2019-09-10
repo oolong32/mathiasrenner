@@ -12,7 +12,8 @@
   font-size: 0.75rem;
   font-weight: normal;
   line-height: 1.5;
-  // text-transform: uppercase;
+  // smooth sailing to top of page
+  scroll-behavior: smooth;
 }
 
 body { padding: 6rem 1rem 3rem; }
@@ -52,6 +53,10 @@ article.project {
     margin: 0 auto 1rem 0; // oben links angeschlagen
     max-width: 100%;
     height: auto;
+    // prevent theft
+    user-select: none;
+    user-drag: none;
+    -webkit-touch-callout: none;
   }
   img.project-image + img.project-image { 
     margin-bottom: 0;
