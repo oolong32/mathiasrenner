@@ -12,7 +12,10 @@
 
 
   <header>
-    <h1>{{ infos.claim }}</h1>
+    <h1>{{ currentSite.name }}
+    {% if infos.claim|length %}
+    <br><span id="claim">{{ infos.claim }}</span>
+    {% endif %}</h1>
     <p><a href="tel:{{ infos.phone|replace({' ': ''}) }}">{{ infos.phone }}</a></p>
     <p><a href="mailto:{{ infos.mail }}">contact</a></p>
   </header>
