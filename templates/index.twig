@@ -38,7 +38,7 @@
             {% endfor %}
           {% elseif project.images|length == 1 %}
           {% set image = project.images.one() %}
-            <img draggable="false" ondragstart="return false;" class="project-image single" src="{{ image.getUrl() }}" alt="Mathias Renner, {{ project.title }}">
+          <img draggable="false" ondragstart="return false;" class="project-image single{{ project.singleHigh ? ' single-high' : '' }}" src="{{ image.getUrl() }}" alt="Mathias Renner, {{ project.title }}">
           {%   else %}
             <p>There seem to be no images for this project!?</p>
           {% endif %}

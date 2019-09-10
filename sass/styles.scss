@@ -93,8 +93,12 @@ footer {
       order: 3; // unten
     }
     img.project-image.single {
-      max-width: 45%;
+      max-width: 47%; // noch etwas mehr?
       margin: 0 auto;
+    }
+    img.project-image.single.single-high {
+      max-width: 30%;
+      border: solid 2px tomato;
     }
     img.project-image.double { 
       max-width: 30%;

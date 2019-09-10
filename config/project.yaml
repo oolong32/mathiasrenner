@@ -1,4 +1,4 @@
-dateModified: 1568143346
+dateModified: 1568143617
 email:
   fromEmail: mathias@mathiasrenner.ch
   fromName: 'Mathias Renner'
@@ -10,9 +10,9 @@ fieldGroups:
     name: 'Allgemeine Infos'
 fields:
   6720cb60-b2a2-4056-aad9-2f33e3e8f6a5:
-    name: Images
+    name: Bilder
     handle: images
-    instructions: 'Bilder für den Slider.'
+    instructions: ''
     searchable: false
     translationMethod: site
     translationKeyFormat: null
@@ -83,9 +83,9 @@ fields:
     contentColumnType: text
     fieldGroup: 623e8f21-c10a-45f4-a9bc-6329faaa52bd
   b31016bc-7398-4a61-a43f-3689e5dc9803:
-    name: 'Hochformat (Einzelbild)'
+    name: Hochformat
     handle: singleHigh
-    instructions: 'Wird auf grösseren Bildschirmen gleich gross angezeigt, wie doppelte Hochformate.'
+    instructions: 'Hat nur bei Einzelbild einen Effekt. Einzelbild wird auf grösseren Bildschirmen gleich gross angezeigt wie doppelte Hochformate.'
     searchable: false
     translationMethod: none
     translationKeyFormat: null

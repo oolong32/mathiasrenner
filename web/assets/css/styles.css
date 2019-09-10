@@ -75,8 +75,11 @@ footer {
       margin-top: 2rem;
       order: 3; }
     article.project img.project-image.single {
-      max-width: 45%;
+      max-width: 47%;
       margin: 0 auto; }
+    article.project img.project-image.single.single-high {
+      max-width: 30%;
+      border: solid 2px tomato; }
     article.project img.project-image.double {
       max-width: 30%;
       order: 1;
