@@ -21,7 +21,7 @@
   </header>
  
   <main>
-    {% set projects = craft.entries.section('projects').all() %}
+    {% set projects = craft.entries().section('projects').all() %}
     {% if projects|length %}
       {% for project in projects %}
         <article class="project">

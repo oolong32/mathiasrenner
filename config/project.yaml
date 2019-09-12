@@ -1,4 +1,4 @@
-dateModified: 1568143617
+dateModified: 1568305551
 email:
   fromEmail: mathias@mathiasrenner.ch
   fromName: 'Mathias Renner'
@@ -94,6 +94,32 @@ fields:
       default: ''
     contentColumnType: boolean
     fieldGroup: 11fcf648-c46a-4cb9-bf9c-de04e8ce644a
+  d1007392-cdf0-4bfe-890d-0e31f5092101:
+    name: 'Portfolio Upload'
+    handle: portfolio
+    instructions: 'PDF Upload'
+    searchable: true
+    translationMethod: site
+    translationKeyFormat: null
+    type: craft\fields\Assets
+    settings:
+      useSingleFolder: '1'
+      defaultUploadLocationSource: 'volume:50706d0d-adfc-4561-99a1-bad68c596824'
+      defaultUploadLocationSubpath: ''
+      singleUploadLocationSource: 'volume:50706d0d-adfc-4561-99a1-bad68c596824'
+      singleUploadLocationSubpath: portfolio
+      restrictFiles: '1'
+      allowedKinds:
+        - pdf
+      sources: '*'
+      source: null
+      targetSiteId: null
+      viewMode: list
+      limit: '1'
+      selectionLabel: 'Add Portfolio'
+      localizeRelations: false
+    contentColumnType: string
+    fieldGroup: 623e8f21-c10a-45f4-a9bc-6329faaa52bd
 globalSets:
   c8bf5d7f-1f31-4bb7-9d04-78c316ce9c10:
     name: 'Allgemeine Infos'
@@ -162,7 +188,7 @@ sections:
           8fb6421c-2521-46d2-ad79-ae22733ca6e4:
             tabs:
               -
-                name: Common
+                name: 🐈
                 sortOrder: 1
                 fields:
                   6720cb60-b2a2-4056-aad9-2f33e3e8f6a5:
@@ -171,6 +197,36 @@ sections:
                   b31016bc-7398-4a61-a43f-3689e5dc9803:
                     required: false
                     sortOrder: 2
+  b4b573d4-09e5-4cef-b829-29055e286a8c:
+    name: Portfolio
+    handle: portfolio
+    type: single
+    enableVersioning: true
+    propagateEntries: true
+    siteSettings:
+      48c3aa5b-eec3-4454-a328-a3e1a4f647c2:
+        enabledByDefault: true
+        hasUrls: true
+        uriFormat: portfolio
+        template: portfolio
+    entryTypes:
+      8c5e78b0-038a-4674-a98f-dec60fb0df41:
+        name: Portfolio
+        handle: portfolio
+        hasTitleField: false
+        titleLabel: ''
+        titleFormat: '{section.name|raw}'
+        sortOrder: 1
+        fieldLayouts:
+          692eb8eb-dc66-45a4-b7c9-f986121d230a:
+            tabs:
+              -
+                name: 🐉
+                sortOrder: 1
+                fields:
+                  d1007392-cdf0-4bfe-890d-0e31f5092101:
+                    required: false
+                    sortOrder: 1
 siteGroups:
   dbd97a29-b0b8-4f99-b883-5bbceef9034b:
     name: 'Mathias Renner'

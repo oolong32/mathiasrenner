@@ -37,6 +37,8 @@ header {
   a:hover { text-decoration: underline; }
 }
 
+body#portfolio main p { text-align: center;}
+
 article.project {
   // display: -webkit-flex;
   display: flex;
