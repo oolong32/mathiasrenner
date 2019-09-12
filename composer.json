@@ -1,7 +1,6 @@
 {
   "require": {
     "craftcms/cms": "^3.0.0",
-    "dolphiq/sitemap": "1.0.9",
     "vlucas/phpdotenv": "^2.4.0"
   },
   "autoload": {
