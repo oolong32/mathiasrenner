@@ -1,4 +1,4 @@
-dateModified: 1568305551
+dateModified: 1568326241
 email:
   fromEmail: mathias@mathiasrenner.ch
   fromName: 'Mathias Renner'
@@ -119,6 +119,23 @@ fields:
       selectionLabel: 'Add Portfolio'
       localizeRelations: false
     contentColumnType: string
+    fieldGroup: 11fcf648-c46a-4cb9-bf9c-de04e8ce644a
+  d6b4bc2e-e70a-4df1-aab3-764a176f112d:
+    name: 'Suchmaschinen Text'
+    handle: SEO_snippet
+    instructions: 'Wird von Suchmaschinen erfasst und mit Suchresultat angezeigt.'
+    searchable: false
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\PlainText
+    settings:
+      placeholder: ''
+      code: ''
+      multiline: ''
+      initialRows: '4'
+      charLimit: ''
+      columnType: text
+    contentColumnType: text
     fieldGroup: 623e8f21-c10a-45f4-a9bc-6329faaa52bd
 globalSets:
   c8bf5d7f-1f31-4bb7-9d04-78c316ce9c10:
@@ -140,6 +157,14 @@ globalSets:
               21293d2c-4fb2-495e-aa59-0fa17b99be9b:
                 required: false
                 sortOrder: 3
+              d6b4bc2e-e70a-4df1-aab3-764a176f112d:
+                required: false
+                sortOrder: 4
+plugins:
+  sitemap:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.2
 sections:
   bce5974d-8954-41f8-b59b-205ef241305b:
     name: Home
@@ -170,9 +195,9 @@ sections:
     siteSettings:
       48c3aa5b-eec3-4454-a328-a3e1a4f647c2:
         enabledByDefault: true
-        hasUrls: true
-        uriFormat: 'projects/{slug}'
-        template: ''
+        hasUrls: false
+        uriFormat: null
+        template: null
     structure:
       uid: 3e672880-8754-4593-b2a7-35aa673eb366
       maxLevels: '1'
