@@ -1,4 +1,4 @@
-dateModified: 1568326241
+dateModified: 1576102056
 email:
   fromEmail: mathias@mathiasrenner.ch
   fromName: 'Mathias Renner'
@@ -252,6 +252,118 @@ sections:
                   d1007392-cdf0-4bfe-890d-0e31f5092101:
                     required: false
                     sortOrder: 1
+  a35494af-907c-4e0a-82fa-b0ac5bccc08f:
+    name: work
+    handle: work
+    type: single
+    enableVersioning: true
+    propagateEntries: true
+    siteSettings:
+      48c3aa5b-eec3-4454-a328-a3e1a4f647c2:
+        enabledByDefault: true
+        hasUrls: true
+        uriFormat: work
+        template: work
+    entryTypes:
+      4cc28026-d4b1-4841-8ea9-748b4982ec6c:
+        name: work
+        handle: work
+        hasTitleField: false
+        titleLabel: null
+        titleFormat: '{section.name|raw}'
+        sortOrder: 1
+  b394bdc2-9088-4fe3-8fc8-1bd3857cb309:
+    name: archive
+    handle: archive
+    type: single
+    enableVersioning: true
+    propagateEntries: true
+    siteSettings:
+      48c3aa5b-eec3-4454-a328-a3e1a4f647c2:
+        enabledByDefault: true
+        hasUrls: true
+        uriFormat: archive
+        template: archive
+    entryTypes:
+      454db89b-e06f-49aa-877e-0df47209903b:
+        name: archive
+        handle: archive
+        hasTitleField: false
+        titleLabel: null
+        titleFormat: '{section.name|raw}'
+        sortOrder: 1
+  f902edad-95e7-4e49-bd68-8989a0831fb7:
+    name: 'Work Projects'
+    handle: workProjects
+    type: structure
+    enableVersioning: true
+    propagateEntries: true
+    siteSettings:
+      48c3aa5b-eec3-4454-a328-a3e1a4f647c2:
+        enabledByDefault: true
+        hasUrls: false
+        uriFormat: null
+        template: null
+    structure:
+      uid: 0e1c5aa7-5b88-4d5e-a6b4-497412eae906
+      maxLevels: '1'
+    entryTypes:
+      92c3dd64-d7c8-443c-839d-45c98b8d5777:
+        name: 'Work Projekt'
+        handle: workProject
+        hasTitleField: true
+        titleLabel: Title
+        titleFormat: ''
+        sortOrder: 1
+        fieldLayouts:
+          339f82fe-dbe6-4b8c-b515-662856de2934:
+            tabs:
+              -
+                name: 'Tab 1'
+                sortOrder: 1
+                fields:
+                  6720cb60-b2a2-4056-aad9-2f33e3e8f6a5:
+                    required: false
+                    sortOrder: 1
+                  b31016bc-7398-4a61-a43f-3689e5dc9803:
+                    required: false
+                    sortOrder: 2
+  8b81fe86-f7ad-482c-baee-7ca4e9114e5a:
+    name: 'Archive Projects'
+    handle: archiveProjects
+    type: structure
+    enableVersioning: true
+    propagateEntries: true
+    siteSettings:
+      48c3aa5b-eec3-4454-a328-a3e1a4f647c2:
+        enabledByDefault: true
+        hasUrls: false
+        uriFormat: null
+        template: null
+    structure:
+      uid: 81e2e04f-2a49-4b20-86ee-459b7cfef917
+      maxLevels: '1'
+    entryTypes:
+      ab6d0c4e-f9b3-41d2-86be-35f066c0229c:
+        name: 'Archiv Projekt'
+        handle: archiveProject
+        hasTitleField: true
+        titleLabel: Title
+        titleFormat: ''
+        sortOrder: 1
+        fieldLayouts:
+          8c5f50e6-c54e-495f-a4dc-2e21e247403d:
+            tabs:
+              -
+                name: 'Tab 1'
+                sortOrder: 1
+                fields:
+                  6720cb60-b2a2-4056-aad9-2f33e3e8f6a5:
+                    required: false
+                    sortOrder: 1
+                  b31016bc-7398-4a61-a43f-3689e5dc9803:
+                    required: false
+                    sortOrder: 2
 siteGroups:
   dbd97a29-b0b8-4f99-b883-5bbceef9034b:
     name: 'Mathias Renner'
