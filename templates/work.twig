@@ -25,9 +25,7 @@
     {% if projects|length %}
       {% for project in projects %}
         <article class="project">
-        {#
           <h2 class="project-title">{{ project.title }}</h2>
-        #}
           {% if project.images|length > 1 %}
           {% set counter = 0 %}
             {% for image in project.images %}
@@ -48,7 +46,7 @@
   </main>
 
   <footer>
-    <p><a href="#projects">back to top</a></p>
+    <p><a href="#work">back to top</a></p>
   </footer>
 
   <script src="/assets/js/vue/vue.min.js"></script>
